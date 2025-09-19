@@ -1,0 +1,37 @@
+// This is your Prisma schema file,
+// learn more about it in the docs: https://pris.ly/d/prisma-schema
+
+generator client {
+  provider = "prisma-client-js"
+  //output   = "../generated/prisma"
+}
+
+datasource db {
+  provider = "sqlite"
+  url      = "file:./dev.db"
+}
+
+//tabelas com seus respectivos campos
+
+model projetos {
+  UUID              String   @unique @default(uuid())
+  id                Int      @id @unique @default(autoincrement())
+  nome_projeto      String  
+  membros_projeto   String
+  turma_projeto     String
+  data_criacao      DateTime @default(now())
+  data_apresentacao String
+  convidados        Boolean
+  observacoes       String
+  status_projeto    String   @default("Pendente")
+  updateAt          DateTime @updatedAt
+}
+
+model usuarios {
+  UUID          String @unique @default(uuid())
+  id            Int    @id @unique @default(autoincrement())
+  nome_usuario  String
+  email_usuario String
+  senha_cripto  String
+  tipo_usuario  String //docente ou supervisors
+}
