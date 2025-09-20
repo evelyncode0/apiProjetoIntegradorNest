@@ -1,6 +1,6 @@
 import { Injectable } from '@nestjs/common';
 import { PrismaService } from '../prisma/prisma.service';
-import { CreateProjetoDto } from './dto/createProjeto.dto';
+
 
 @Injectable()
 export class ProjetosService {
@@ -100,3 +100,4 @@ export class ProjetosService {
     return users;
   }
 }
+
