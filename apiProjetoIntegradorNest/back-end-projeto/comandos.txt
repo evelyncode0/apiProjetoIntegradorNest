@@ -1,0 +1,13 @@
+para rodar a API do zero
+1° - rodar npm i
+2° - npx prisma generate
+3° - npx prisma migrate dev
+4° - npm run start:dev --> para rodar a API
+
+
+------- ignorar linhas abaixo-----------
+teste git
+teste git
+teste git
+teste git
+teste git
