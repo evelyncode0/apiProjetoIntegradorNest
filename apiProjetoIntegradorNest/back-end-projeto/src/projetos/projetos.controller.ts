@@ -1,7 +1,6 @@
 import { Controller, Get, Post, Delete, Put, Param, Body} from '@nestjs/common';
 //importando o service para ter acesso aos metodos
 import { ProjetosService } from './projetos.service';
-import { CreateProjetoDto } from './dto/createProjeto.dto';
 
 @Controller('projetos')
 export class ProjetosController {
@@ -44,3 +43,4 @@ export class ProjetosController {
   }
 
 }
+
