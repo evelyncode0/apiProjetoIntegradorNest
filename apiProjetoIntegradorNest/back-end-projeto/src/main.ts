@@ -33,13 +33,13 @@ async function bootstrap() {
 
   // Habilitando CORS para evitar bloqueios pelo navegadores 
   app.enableCors({
-    origin: "http://localhost:3333", // URL do frontend Next.js verifique o IP ou qual porta está rodando o seu 
+    origin: "http://localhost:3030", // URL do frontend Next.js verifique o IP ou qual porta está rodando o seu 
     methods: ["GET", "POST", "PUT", "DELETE", "PATCH"],
     credentials: true,
   });
 
-  await app.listen(3333);
-  console.log("Rodando o BackEnd (API) na porta: http://localhost:3333");
+  await app.listen(3030);
+  console.log("Rodando o BackEnd (API) na porta: http://localhost:3030");
   
 }
 bootstrap();

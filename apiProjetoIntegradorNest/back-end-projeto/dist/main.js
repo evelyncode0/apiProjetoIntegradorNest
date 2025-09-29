@@ -22,12 +22,12 @@ async function bootstrap() {
         },
     }));
     app.enableCors({
-        origin: "http://localhost:3333",
+        origin: "http://localhost:3030",
         methods: ["GET", "POST", "PUT", "DELETE", "PATCH"],
         credentials: true,
     });
-    await app.listen(3333);
-    console.log("Rodando o BackEnd (API) na porta: http://localhost:3333");
+    await app.listen(3030);
+    console.log("Rodando o BackEnd (API) na porta: http://localhost:3030");
 }
 bootstrap();
 //# sourceMappingURL=main.js.map
