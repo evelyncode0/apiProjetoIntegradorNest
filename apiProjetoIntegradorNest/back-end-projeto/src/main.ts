@@ -33,7 +33,7 @@ async function bootstrap() {
 
   // Habilitando CORS para evitar bloqueios pelo navegadores 
   app.enableCors({
-    origin: "http://localhost:3030", // URL do frontend Next.js verifique o IP ou qual porta está rodando o seu 
+    origin: "http://localhost:3001", // URL do frontend Next.js verifique o IP ou qual porta está rodando o seu 
     methods: ["GET", "POST", "PUT", "DELETE", "PATCH"],
     credentials: true,
   });

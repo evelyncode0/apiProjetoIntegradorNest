@@ -29,6 +29,7 @@ let ProjetosService = class ProjetosService {
                 turma_projeto: data.turma_projeto,
                 data_apresentacao: data.data_apresentacao,
                 convidados: data.convidados,
+                detalhesConvidados: data.detalhesConvidados,
                 observacoes: data.observacoes,
             },
         });
@@ -63,6 +64,7 @@ let ProjetosService = class ProjetosService {
             data,
         });
         return updatedUser;
+        console.log("Registro atualizado com sucesso");
     }
     async findProjeto(id) {
         const projetoId = parseInt(id, 10);

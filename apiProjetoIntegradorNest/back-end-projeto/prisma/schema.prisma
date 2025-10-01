@@ -22,6 +22,7 @@ model projetos {
   data_criacao      DateTime @default(now())
   data_apresentacao String
   convidados        Boolean
+  detalhesConvidados  String?   // permite ser null ou string vazia
   observacoes       String
   status_projeto    String   @default("Pendente")
   updateAt          DateTime @updatedAt
