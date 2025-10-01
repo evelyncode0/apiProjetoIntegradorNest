@@ -11,6 +11,7 @@ export declare class ProjetosService {
         data_criacao: Date;
         data_apresentacao: string;
         convidados: boolean;
+        detalhesConvidados: string | null;
         observacoes: string;
         status_projeto: string;
         updateAt: Date;
@@ -24,6 +25,7 @@ export declare class ProjetosService {
         data_criacao: Date;
         data_apresentacao: string;
         convidados: boolean;
+        detalhesConvidados: string | null;
         observacoes: string;
         status_projeto: string;
         updateAt: Date;
@@ -37,6 +39,7 @@ export declare class ProjetosService {
         data_criacao: Date;
         data_apresentacao: string;
         convidados: boolean;
+        detalhesConvidados: string | null;
         observacoes: string;
         status_projeto: string;
         updateAt: Date;
@@ -50,6 +53,7 @@ export declare class ProjetosService {
         data_criacao: Date;
         data_apresentacao: string;
         convidados: boolean;
+        detalhesConvidados: string | null;
         observacoes: string;
         status_projeto: string;
         updateAt: Date;
@@ -63,6 +67,7 @@ export declare class ProjetosService {
         data_criacao: Date;
         data_apresentacao: string;
         convidados: boolean;
+        detalhesConvidados: string | null;
         observacoes: string;
         status_projeto: string;
         updateAt: Date;
@@ -76,6 +81,7 @@ export declare class ProjetosService {
         data_criacao: Date;
         data_apresentacao: string;
         convidados: boolean;
+        detalhesConvidados: string | null;
         observacoes: string;
         status_projeto: string;
         updateAt: Date;

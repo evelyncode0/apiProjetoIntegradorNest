@@ -23,6 +23,7 @@ export class ProjetosService {
                 turma_projeto: data.turma_projeto,
                 data_apresentacao: data.data_apresentacao,
                 convidados: data.convidados,
+                detalhesConvidados: data.detalhesConvidados,
                 observacoes: data.observacoes,
                 
             },
@@ -69,8 +70,9 @@ export class ProjetosService {
       where: { id: userId },
       data,
     });
-
+   
     return updatedUser; // retorna o registro atualizado em JSON
+     console.log("Registro atualizado com sucesso")
     }
 
     //Método Buscar Registro por ID
